@@ -90,3 +90,18 @@ Source: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 - `for`: for n times, do this
 
 ---
+
+## String Manipulations
+
+- strings are immutable
+- length: `len`
+- indexing: `s[n]`
+- slice: `[::]`
+
+## Algorithms
+
+- guess-and-check: guess a solution and check it
+- approximation: start with a guess and increment by some small value
+- bisection search: half interval each iteration, `logsub2N`
+
+---
