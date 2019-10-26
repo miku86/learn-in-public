@@ -105,3 +105,45 @@ Source: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 - bisection search: half interval each iteration, `logsub2N`
 
 ---
+
+## Abstraction, Decomposition, Functions
+
+### Abstraction
+
+- a TV is a blackbox
+- know the interface: input and output
+- input: connect other device to it that has data
+- blackbox converts input to output
+- Abstraction: do not need to know how TV works
+
+=> programming: function specification , docstring
+Why:
+
+- can't see details
+- don't need to see details
+- don't want to see details
+- hide implementation details
+
+### Decomposition
+
+- combine multiple TVs to display a big image
+- each TV takes input and produces output
+- Decomposition: different devices work together to achieve a goal
+
+=> programming: code divided into modules => functions or classes
+Why:
+
+- self-contained
+- reusable
+- keep code organized
+- keep code coherent
+
+### Function
+
+- reusable chunks of code
+- have to get called/invoked
+- has name, parameters, body, a return, docstring (optional, but recommended)
+- scope: environment, where stuff lives
+- function declarations only seen as `some code` until invoked
+
+---
