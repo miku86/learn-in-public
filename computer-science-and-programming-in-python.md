@@ -68,3 +68,25 @@ Source: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 
 - assignment: bind variable to value
 - can re-bind variables using new assignment
+
+---
+
+## Branching & Iteration
+
+### Strings
+
+- characters, letters, whitespace, digits
+- `print()`
+- `input()`
+
+### Conditionals
+
+- controls where program flows: `if else`
+
+### Loops
+
+- do stuff repeatedly
+- `while`: while sth is true, do this
+- `for`: for n times, do this
+
+---
