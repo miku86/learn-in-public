@@ -2,7 +2,7 @@
 
 Source: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/
 
-## Computation
+## 01. Computation
 
 ### Overview
 
@@ -71,7 +71,7 @@ Source: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 
 ---
 
-## Branching & Iteration
+## 02. Branching & Iteration
 
 ### Strings
 
@@ -91,7 +91,7 @@ Source: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 
 ---
 
-## String Manipulations
+## 03. String Manipulations
 
 - strings are immutable
 - length: `len`
@@ -106,7 +106,7 @@ Source: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 
 ---
 
-## Abstraction, Decomposition, Functions
+## 04. Abstraction, Decomposition, Functions
 
 ### Abstraction
 
