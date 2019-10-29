@@ -277,7 +277,7 @@ def factorial(n):
   - can be done by someone other than the implementer (biased)
 - glass box testing:
   - explore paths through code
-  -  called path-complete if every potential path through code is tested at least once
+  - - called path-complete if every potential path through code is tested at least once
 
 ### Debugging
 
@@ -324,5 +324,80 @@ def factorial(n):
   - check that invariants on data structures are met
   - check constraints on return values
   - check for violations of constraints on procedure (e.g. no duplicates in a list)
+
+---
+
+## 08. Object Oriented Programming
+
+### Basics
+
+- Python supports many different kinds of data
+- each is an object, and every object has:
+  - a type
+  - an internal data representation (primitive or composite)
+  - a set of procedures for interaction with the object
+- an object is an instance of a type: `123` is an instance of an int, `hello` is an instance of a string
+- EVERYTHING IN PYTHON IS AN OBJECT (and has a type)
+- can create new objects of some type
+- can update objects
+- can delete objects
+  - explicitly using del or just “forget” about them
+  - python system will reclaim destroyed or inaccessible objects – called “garbage collection”
+
+### What Are Objects?
+
+- objects are a data abstraction that captures:
+  - an internal representation: through data attributes
+  - an interface for interacting with object:
+    - through methods (aka procedures/functions)
+    - defines behaviors but hides implementation
+- internal representation should be private
+- correct behavior may be compromised if you manipulate internal representation directly
+
+### Advantages Of OOP
+
+- bundle data into packages together with procedures that work on them through interfaces
+- divide- and- conquer development:
+  - implement and test behavior of each class separately
+  - increased modularity reduces complexity
+- classes make it easy to reuse code
+  - many Python modules define new classes
+  - each class has a separate environment (no collision on function names)
+  - inheritance allows subclasses to redefine or extend a selected subset of a superclass’ behavior
+
+### Creating And Using Your Own Types With Classes
+
+- make a distinction between creating a class and using an instance of the class
+- creating the class involves:
+  - defining the class name
+  - defining class attributes
+  - for example, someone wrote code to implement a list class
+- using the class involves:
+  - creating new instances of objects
+  - doing operations on the instances
+
+### What Are Attributes?
+
+- data and procedures that “belong” to the class
+- data attributes:
+  - think of data as other objects that make up the class
+  - for example, a coordinate is made up of two numbers
+- methods (procedural attributes):
+  - think of methods as functions that only work with this class
+  - how to interact with the object
+  - for example you can define a distance between two coordinate objects but there is no meaning to a distance between two list objects
+- defining how to create an instance: special method `__init__`
+- actually creating an instance: `var_name = class_name(parameters)`
+- `.` operator is used to access any attribute (data attribute or method) of an object
+- use `isinstance()` to check if an object is an instance of a class
+
+### The Power Of OOP
+
+- bundle together objects that share:
+  - common attributes and
+  - procedures that operate on those attributes
+- use abstraction to make a distinction between how to implement an object vs how to use the object
+- build layers of object abstractions that inherit behaviors from other classes of objects
+- create our own classes of objects on top of Python’s basic classes
 
 ---
