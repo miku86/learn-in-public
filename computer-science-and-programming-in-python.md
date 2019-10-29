@@ -93,12 +93,14 @@ Source: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
 
 ## 03. String Manipulations
 
+### Basics
+
 - strings are immutable
 - length: `len`
 - indexing: `s[n]`
 - slice: `[::]`
 
-## Algorithms
+### Algorithms
 
 - guess-and-check: guess a solution and check it
 - approximation: start with a guess and increment by some small value
@@ -145,5 +147,44 @@ Why:
 - has name, parameters, body, a return, docstring (optional, but recommended)
 - scope: environment, where stuff lives
 - function declarations only seen as `some code` until invoked
+
+---
+
+## 05. Tuples, Lists, Aliasing, Mutability, Cloning
+
+### Compound Data Types
+
+- made up of other data types
+
+### Tuples
+
+- ordered sequence of (mixed) elements
+- immutable
+- creation: `()`
+- swap: `(a, b) = (b, a)`
+- iterable
+
+### Lists
+
+- ordered sequence of (mixed) elements
+- mutable
+- creation: `[]`
+- iterable
+- add element `a.append(b)`
+- concat lists `a.extend(b)`
+- delete element `del(a[index])`
+- sort list: `a.sort()`
+- reverse list: `a.reverse()`
+- string to lists and vice-versa: `split()`, `join()`
+
+### Aliasing, Mutability, Cloning
+
+- variable name points to object, e.g. a person
+- many different variables can point to the same object, e.g. person has multiple nicknames
+- if you change the object (=> the person object), any variable (=> any nickname) pointing to that object is affected
+
+=> side effects!
+
+- copy list: `copy = original[:]`
 
 ---
