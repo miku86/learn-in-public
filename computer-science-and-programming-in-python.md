@@ -170,9 +170,9 @@ Why:
 - mutable
 - creation: `[]`
 - iterable
-- add element `a.append(b)`
-- concat lists `a.extend(b)`
-- delete element `del(a[index])`
+- add element: `a.append(b)`
+- concat lists: `a.extend(b)`
+- delete element: `del(a[index])`
 - sort list: `a.sort()`
 - reverse list: `a.reverse()`
 - string to lists and vice-versa: `split()`, `join()`
@@ -186,5 +186,63 @@ Why:
 => side effects!
 
 - copy list: `copy = original[:]`
+
+---
+
+## 06. Recursion, Dictionaries
+
+### Recursion
+
+- the process of repeating items in a self-similar way
+- algorithmically: a way to design solutions by divide-and-conquer: reduce a problem to simpler versions of the same problem
+- semantically: a programming technique where a function calls itself: `base case + recursive step`
+- e.g. `multiplication of a and b` by `adding a to itself b times`
+- each recursive call to a function creates its own scope
+- bindings of variables in a scope are not changed by recursive call
+- flow of control passes back to previous scope once function call returns value
+
+### Iteration vs. Recursion
+
+```py
+# iteration
+def factorial_iter(n):
+  prod = 1
+  for i in range(1, n+1):
+    prod *= i
+  return prod
+
+# recursion
+def factorial(n):
+  if n == 1:
+    return 1
+  else:
+    return n * factorial(n-1)
+```
+
+- recursion may be simpler, more intuitive
+- recursion may be efficient from programmer point of view
+- recursion may not be efficient from computer point of view
+
+### Induction
+
+- To prove a statement indexed on integers is true for all values of n:
+  - Prove it is true when n is smallest value (e.g. n = 0 or n = 1)
+  - Then prove that if it is true for an arbitrary value of n, one can show that it must be true for n+1
+
+### Dictionaries
+
+- store data as key-value pairs
+- creation: `{}`
+- unordered
+- add element: `dict[newKey] = newValue`
+- delete element: `del(dict[key])`
+- get all keys: `dict.keys()`
+- get all values: `dict.values()`
+
+### List vs. Dictionary
+
+- List: ordered <===> Dict: unordered
+- List: matches index to value <===> Dict: matches key to value
+- List: look up element by index (starts from 0, increasing) <===> Dict: look up element by key (whatever you like)
 
 ---
