@@ -246,3 +246,83 @@ def factorial(n):
 - List: look up element by index (starts from 0, increasing) <===> Dict: look up element by key (whatever you like)
 
 ---
+
+## 07. Testing, Debugging, Exceptions, Assertions
+
+- You are making soup but bugs keep falling in from the ceiling. What do you do?
+  - keep lid closed: defensive programming
+  - check soup for bugs: testing
+  - clean kitchen: debugging
+
+### Defensive Programming
+
+- Decomposition
+- Abstraction
+
+### Testing
+
+- Compare input/output pairs to specification
+
+#### Types
+
+- Unit Test: validate each piece of program separately
+- Regression Test: catch reintroduced errors that were previously fixed
+- Integration Test: test if overall programm works
+
+#### Approaches
+
+- black box testing:
+  - explore paths through specification
+  - can be reused if implementation changes
+  - can be done by someone other than the implementer (biased)
+- glass box testing:
+  - explore paths through code
+  -  called path-complete if every potential path through code is tested at least once
+
+### Debugging
+
+- Study events leading up to an error
+- steep learning curve
+- goal is to have a bug-free program
+- tools:
+  - print with bisecting
+  - read error messages
+  - logic errors: think before coding, explain code to someone else
+
+### DON'T
+
+1. write entire program
+2. test entire program
+3. debug entire program
+
+### DO
+
+1. write one function
+2. unit test this function
+3. debug this function
+4. integration test
+5. repeat from 1.
+
+### Exception
+
+- handle exception: use try & except
+- never fail silently
+- instead raise exception
+
+### Assertions
+
+- assertions don’t allow a programmer to control response to unexpected conditions
+- ensure that execution halts whenever an expected condition is not met
+- typically used to check inputs to functions, but can be used anywhere
+- can be used to check outputs of a function to avoid propagating bad values
+- can make it easier to locate a source of a bug
+- goal is to spot bugs as soon as introduced and make clear where they happened
+- use as a supplement to testing
+- raise exceptions if users supplies bad data input
+- use assertions to:
+  - check types of arguments or values
+  - check that invariants on data structures are met
+  - check constraints on return values
+  - check for violations of constraints on procedure (e.g. no duplicates in a list)
+
+---
