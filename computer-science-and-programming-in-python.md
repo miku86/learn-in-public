@@ -401,3 +401,23 @@ def factorial(n):
 - create our own classes of objects on top of Python’s basic classes
 
 ---
+
+## 09. Python Classes And Inheritance
+
+- implementing a new object type with a class:
+  - define the class
+  - define data attributes
+  - define methods
+- using the new object type with a class:
+  - create instance of the object type
+  - do operations with them
+- class defines data and methods common across all instances
+- instance has the structure of the class
+- getters and setters should be used outside of class to access data attributes
+
+### Hierarchies
+
+- a child class inherits all data and behaviors of parent class
+- it can add more info, add more behavior, override behavior
+
+---
