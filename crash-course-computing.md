@@ -1,0 +1,21 @@
+# Crash Course Computing
+
+- computing is everywhere
+- first machine: abacus (3000 v. Chr.)
+- first "computer": person who computed
+- Leibniz: first real computer device
+- Leibniz: Step Reckoner
+- Charles Babbage: Difference Engine
+- Charles Babbage: Analytical Engine as first "general purpose computer"
+- Ada Lovelace
+- Herman Hollerith: Punch cards => IBM
+- Harvard Mark 2: Mechanical
+- Grace Hooper
+- Thermionic Effect
+- Diode
+- Vacuum Tube
+- Colossus Mark 1
+- Alan Turing: The Bombe
+- ENIAC
+- Transistor
+- George Boole: Boolean Logic

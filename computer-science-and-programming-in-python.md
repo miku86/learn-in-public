@@ -421,3 +421,40 @@ def factorial(n):
 - it can add more info, add more behavior, override behavior
 
 ---
+
+## 10. Understanding Program Efficiency: 1
+
+Challenges in understanding efficiency of solution to a computational problem:
+
+- a program can be implemented in many different ways
+- you can solve a problem using only a handful of different algorithms
+- would like to separate choices of implementation from choices of more abstract algorithm
+
+=> How can we decide which option for program is most efficient?
+
+### How To Evaluate Efficiency Of Programs
+
+- measure with a timer
+  - problem: varies between different implementations & computers
+  - problem: is not predictable based on small inputs
+- count the operations
+  - problem: depends on implementation
+  - problem: no clear definition of which operations to count
+- abstract notion of order of growth
+  => Big O
+
+### Big O Notation
+
+- Big O notation measures an upper bound on the asymptotic growth, often called order of growth
+- is used to describe worst case
+  - worst case occurs often and is the bottleneck when a program runs
+  - express rate of growth of program relative to the input size
+  - evaluate algorithm NOT machine or implementation
+
+---
+
+## 11.
+
+---
+
+## 12.
